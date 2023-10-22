@@ -24,6 +24,10 @@ al = 0:0.01:2*pi;
 lok_tocke = lok(al);
 plot(lok_tocke(1, :), lok_tocke(2, :), 'k-', 'LineWidth', 2); 
 axis equal;
+title('Naključno generirane točke na krožnici z lokom');
+    xlabel('X-os');
+    ylabel('Y-os');
+    legend('Zunaj krožnice', 'Znotraj krožnice', 'Krožnica');
 
 
 function [approx_pi, pi_napaka] = area_pi(tocke_krog, tocke)
